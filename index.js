@@ -23,5 +23,16 @@ function getFollowers() {
     });
 }
 
+// //Menggunakan Fetch
+// function getFollowers() {
+//   fetch("https://randomuser.me/api/")
+//     .then(response => response.json())
+//     .then(data => {
+//       data.map(datas => {
+//         console.log(datas.name);
+//       });
+//     });
+// }
+
 //Menggunakan Ajax
 // const req = new HMLHttpRequest
