@@ -43,6 +43,9 @@ body {
   color: white;
   font-size: 20px;
 }
+h5 {
+  font-size: 30px !important;
+}
 
 /*
  * Header
@@ -102,6 +105,9 @@ body {
  */
 .mastfoot {
   color: white;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 button {

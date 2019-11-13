@@ -3,9 +3,9 @@ function getFollowers() {
   fetch("https://api.github.com/users/robyafrizal/followers")
     .then(response => response.json())
     .then(follower => {
-      let jumlahFollower = document.createElement("h3");
+      let jumlahFollower = document.createElement("h5");
       jumlahFollower.innerText = `Jumlah Follower : ${follower.length}`;
-      jumlahFollower.className = "text-center";
+      jumlahFollower.className = "text-center m-3";
       document.getElementById("div").append(jumlahFollower);
       //   console.log(follower.length);
 
@@ -36,6 +36,8 @@ function getFollowers() {
         image.append(link);
         document.getElementById("div").append(image);
       });
+      let stopButton = document.getElementById("delete");
+      stopButton.remove();
     });
 }
 
